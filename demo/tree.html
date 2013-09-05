@@ -4,13 +4,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- stylesheets -->
+    <!-- css -->
     <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
     <link type="text/css" rel="stylesheet" href="/css/layout-default-latest.css" />
     <link type="text/css" rel="stylesheet" href="/css/jqtree.css" />
     <link type="text/css" rel="stylesheet" href="/css/wireframe.css" />
-    <!-- javascript -->
+    <style>
+
+      body {
+      font: 10px sans-serif;
+      }
+
+      .axis path,
+      .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+      }
+
+      .area {
+      fill: steelblue;
+      }
+
+    </style>
+    <!-- js -->
+    <!-- <script type="text/javascript" src="/js/d3.js"></script> -->
     <script type="text/javascript" src="/js/jquery-latest.js"></script>
     <script type="text/javascript" src="/js/jquery-ui-latest.js"></script>
     <script type="text/javascript" src="/js/jquery.layout-latest.js"></script>
@@ -29,7 +48,7 @@
           <a class="brand" href="#">Wireframe Demo</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
-              Welcome <a href="#" class="navbar-link">Jingbin Liu</a>
+              Welcome <a href="#" class="navbar-link">User</a>
             </p>
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -44,6 +63,10 @@
       <div id="order" class="inner-layout-container"> 
 	<div class="inner-center"> 
 	  <div class="pane-header ui-state-default ui-corner-all">center</div> 
+	  <!-- begin d3 embed -->
+	  <script src="http://d3js.org/d3.v3.min.js"></script>	  
+	  <script type="text/javascript" src="/js/d3Area.js"></script> 
+	  <!-- end d3 embed -->
 	  <div id="grid-example" class="ui-layout-content ui-widget-content">
 	    <P>grid-example
 	    </P>
@@ -77,9 +100,11 @@
       </div> 
     </div>  <!--container-->
     <hr>
+    <!-- begin footer -->
     <div id="foot" class="navbar navbar-fixed-bottom">
       <p>&copy; 2013 Cisco System Inc. All rights reserved. </p>
     </div>
+    <!-- end footer -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>

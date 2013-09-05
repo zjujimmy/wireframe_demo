@@ -77,5 +77,5 @@
       }
       .ui-layout-center		{ padding:		30px; }
       /* add some colors to distinguish outer from inner panes */
-      .ui-layout-center 		{ background:	#FFE; }
-      #order .ui-layout-pane	{ background:	#EFE; }
+      .ui-layout-center 		{ background:	#FFFFFF; }
+      #order .ui-layout-pane	{ background:	#FFFFFF; }
